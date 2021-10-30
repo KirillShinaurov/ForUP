@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Управление бронированием</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<div class="logo"></div>
+		<nav class="topnav" id="myTopnav">
+  <a href="index.html">Главная</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</nav>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+	</header>
+	<main>
+		<section class="content__section">
+		<h2>Завершение бронирования</h2>
+		<form class="booking_form">
+			<legend class="booking_legend">
+				<h3>Данные о заказе</h3>
+				<label for="location_field">Регион</label>
+				<input type="text" id="location_field" name="location" value="Алтайский край" disabled>
+				<label for="address_field">Адрес локации</label>
+				<input type="text" id="address_field" name="address" value="Туристическая база &#171Озеро Красилово&#187, Косихинский район, с. Озеро-Красилово, ул. Пушкина д.1" disabled>
+				<label for="zone_field">Выбранные зоны</label>
+				<input type="text" id="zone_field" name="zone" value="Шатёр" disabled>
+				<label for="shot_date">Дата съёмки</label>
+				<input type="text" name="date" id="shot_date" value="26-09-2021" disabled>
+				<label for="shot_time">Время съёмки</label>
+				<input type="text" name="time" id="shot_time" value="17:00" disabled>
+				<label for="count_members">Количество участников</label>
+				<input type="number" name="members" id="count_members" value="3" disabled>
+				<label for="cost_field">Промежуточная стоимость:</label>
+				<input type="text" id="cost_field" name="cost" value="1500&#8381" disabled>
+				<h3>Выбор доп.услуг</h3>
+				<table>
+				<tr>
+					<th>Услуга</th>
+					<th>Отметка</th>
+				</tr>
+				<tr>
+					<td><label for="photo">Услуги фотографа - 2000 р/час</label></td>
+					<td><input type="checkbox" name="photo" id="photo_field"></td>
+				</tr>
+				<tr>
+					<td><label for="photo">Реквизит для съемок - от 500  р/час </label></td>
+					<td><input type="checkbox" name="props" id="props_field"></td>
+				</tr>
+				<tr>
+					<td><label for="photo">Моментальная печать фотографий - 30 р/шт</label></td>
+					<td><input type="checkbox" name="print" id="print_field"></td>
+				</tr>
+				<tr>
+					<td><label for="photo">Услуги такси - 50 р + 10 р за каждый км</label></td>
+					<td><input type="checkbox" name="taxi" id="taxi_field"></td>
+				</tr>
+				</table>
+			<h3>Дополнительно</h3>
+			<label for="comment_field">Комментарий к заказу</label>
+			<textarea id="comment_field" name="comment"></textarea>
+			<label for="email_field">Ваш email:</label>
+			<input type="email" id="email_field" name="email">
+			<label for="total-cost-field">Итоговая стоимость</label>
+			<input type="text" id="total-cost-field" name="total-cost" value="3500" disabled>
+		</legend>
+		</form>
+		<button class="btn"><a href="">Оформить бронь</a></button>
+		<hr>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="copyright">&copy; Шинауров Кирилл</div>
+		<span class="tel">Телефон: 8(800)333-30-30</span>
+		<div class="footer_navigation">
+			<ul>
+				<li><a href="http://xxxxxx-m1.wsr.ru">Home</a></li>
+				<li><a href="http://xxxxxx-m1.wsr.ru/login">Login</a></li>
+				<li><a href="http://xxxxxx-m1.wsr.ru/signup">Sign Up</a></li>
+				<li><a href="http://xxxxxx-m1.wsr.ru/contact">Contact</a></li>
+				<li><a href="http://xxxxxx-m1.wsr.ru/news">News</a></li>
+				<li><a href="http://xxxxxx-m1.wsr.ru/return">Return</a></li>
+				<li><a href="http://xxxxxx-m1.wsr.ru/feedback">Feedback</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

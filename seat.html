@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Страница с выбором зоны</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<div class="logo"></div>
+		<nav class="topnav" id="myTopnav">
+  <a href="index.html">Главная</a>
+  <a href="booking.html">Управление бронированием</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</nav>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+	</header>
+	<main class="seat_main">
+		<section class="content__section">
+			<h2>Выбор зоны</h2>
+		<table>
+			<tr>
+				<th>Зоны локации</th>
+				<th>Вместимость</th>
+				<th>Стоимость</th>
+				<th>Выбрать</th>
+			</tr>
+			<tr>
+				<td>Шатер - 2 шт.</td>
+				<td>Вместимость - до 5 чел</td>
+				<td>500 р/час</td>
+				<td><input type="checkbox" name="choice"></td>
+			</tr>
+			<tr>
+				<td>Летний домик- 5 шт</td>
+				<td>Вместимость - до 10 чел</td>
+				<td>300 р/час</td>
+				<td><input type="checkbox" name="choice"></td>
+			</tr>
+			<tr>
+				<td>Беседка - 10 шт</td>
+				<td>Вместимость - до 5 чел</td>
+				<td>200 р/час</td>
+				<td><input type="checkbox" name="choice"></td>
+			</tr>
+			<tr>
+				<td>Профессиональная фотостудия 1 шт</td>
+				<td>Вместимость - до 10 чел</td>
+				<td>300 р/час</td>
+				<td><input type="checkbox" name="choice"></td>
+			</tr>
+			<tr>
+				<td>Пирс у озера -  1 шт</td>
+				<td>Вместимость - до 15 чел</td>
+				<td>200 р/час</td>
+				<td><input type="checkbox" name="choice"></td>
+			</tr>
+		</table>
+		<img src="images/plan/9.jpg" alt="План локации">
+		<button class="btn"><a href="booking.html">Забронировать</a></button>
+		<hr>
+	</main>
+	<footer class="footer">
+		<div class="copyright">&copy; Шинауров Кирилл</div>
+		<span class="tel">Телефон: 8(800)333-30-30</span>
+		<div class="footer_navigation">
+			<ul>
+				<li><a href="http://xxxxxx-m1.wsr.ru">Home</a></li>
+				<li><a href="http://xxxxxx-m1.wsr.ru/login">Login</a></li>
+				<li><a href="http://xxxxxx-m1.wsr.ru/signup">Sign Up</a></li>
+				<li><a href="http://xxxxxx-m1.wsr.ru/contact">Contact</a></li>
+				<li><a href="http://xxxxxx-m1.wsr.ru/news">News</a></li>
+				<li><a href="http://xxxxxx-m1.wsr.ru/return">Return</a></li>
+				<li><a href="http://xxxxxx-m1.wsr.ru/feedback">Feedback</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
